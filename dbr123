@@ -1,0 +1,202 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = " Example Script Hub ",
+   LoadingTitle = "🔫 dbr 💥",
+   LoadingSubtitle = "by 1_F0",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key | Youtube Hub",
+      Subtitle = "Key System",
+      Note = "Key In Discord Server",
+      FileName = "YoutubeHubKey1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/AtgzSPWK"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+
+Rayfield:Notify({
+   Title = "You executed the script",
+   Content = "Very cool gui",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator1",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator1.RootPart.CFrame
+
+   end,
+   
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator2",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator2.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator3",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator3.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator4",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator4.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator5",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator5.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator6",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator6.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Generator7",
+   Callback = function()
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Generator7.RootPart.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "reward",
+   Callback = function()
+   
+   game:GetService("Workspace").KateOnFire1.HumanoidRootPart.CFrame = game:GetService("Workspace").Lobby.Obby.Reward.CFrame
+   
+   end,
+
+})
+
+local Button = MainTab:CreateButton({
+   Name = "surv_1",
+   Callback = function()
+   
+   local players = game:GetService("Players")
+local me = players.LocalPlayer
+local myChar = me.Character or me.CharacterAdded:Wait()
+local target = players:GetPlayers()[1]
+
+if target and target ~= me and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+    myChar:WaitForChild("HumanoidRootPart").CFrame = target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+end
+
+	end,
+	
+})
+
+local Button = MainTab:CreateButton({
+   Name = "surv_2",
+   Callback = function()
+   
+   local players = game:GetService("Players")
+local me = players.LocalPlayer
+local myChar = me.Character or me.CharacterAdded:Wait()
+local target = players:GetPlayers()[2]
+
+if target and target ~= me and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+    myChar:WaitForChild("HumanoidRootPart").CFrame = target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+end
+
+	end,
+	
+})
+
+local Button = MainTab:CreateButton({
+   Name = "surv_3",
+   Callback = function()
+
+	local players = game:GetService("Players")
+local me = players.LocalPlayer
+local myChar = me.Character or me.CharacterAdded:Wait()
+local target = players:GetPlayers()[3]
+
+if target and target ~= me and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+    myChar:WaitForChild("HumanoidRootPart").CFrame = target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+end
+
+	end,
+	
+})
+
+local Button = MainTab:CreateButton({
+   Name = "surv_4",
+   Callback = function()
+   
+   local players = game:GetService("Players")
+local me = players.LocalPlayer
+local myChar = me.Character or me.CharacterAdded:Wait()
+local target = players:GetPlayers()[4]
+
+if target and target ~= me and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+    myChar:WaitForChild("HumanoidRootPart").CFrame = target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+end
+
+	end,
+	
+})
+
+local Button = MainTab:CreateButton({
+   Name = "killer",
+   Callback = function()
+   
+   local localPlayer = game:GetService("Players").LocalPlayer
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+
+local killer = workspace:FindFirstChild("Killer")
+if killer and killer:FindFirstChild("HumanoidRootPart") then
+    character:WaitForChild("HumanoidRootPart").CFrame = killer.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+end
+
+	end,
+	
+})
